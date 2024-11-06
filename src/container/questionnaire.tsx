@@ -7,6 +7,7 @@ import './questionnaire.css'
 export const Questionnaire = () => {
     const [questions, setQuestions] = useState<Question[]>(naruto)
     const [question, setQuestion] = useState<Question>(initialQuestion)
+    const [show, setShow] = useState<boolean>(false)
 
     useEffect(() => {
         changeQuestion()
@@ -16,6 +17,7 @@ export const Questionnaire = () => {
         setQuestion(data[Math.floor(Math.random() * data.length)])
     }
     const changeQuestion = () => {
+        setShow(false)
         setQuestion(questions[Math.floor(Math.random() * questions.length)])
         // const radios = document.getElementsByName(question.question)
         // radios.forEach(radio => radio.checked = false)
@@ -23,7 +25,6 @@ export const Questionnaire = () => {
     const selectAnswer = async (event: ChangeEvent<HTMLInputElement>) => {
         if(event.target.value === question.answer) {
             setQuestions([...questions.filter((question) => question.question !== event.target.name),
-                // { question: question.question, answer: question.answer, answers: question.answers }
                 {...question, answered: true }
             ])
         } else {
@@ -42,7 +43,7 @@ export const Questionnaire = () => {
                 <option aria-value={novela}>Novela</option>
             </select> */}
             <button onClick={changeQuestion}>skip</button>
-            <button onClick={changeQuestion}>check</button>
+            <button onClick={() => setShow(true)}>check</button>
             <fieldset>
                 <legend>{question.question}</legend>
                 <>{question.answers.map((answer: string) => {
@@ -51,12 +52,14 @@ export const Questionnaire = () => {
                         <label htmlFor={answer}>{answer}</label>
                     </li>
                 })}</>
-                <>{question.answered}</>
+                <>{JSON.stringify(question.answered)}</>
                 <>{question.answer}</>
             </fieldset>
-            <button>{questions.length}/{questions.length}</button>
-            <button>{questions.filter((hit) => hit.answered === true).length}</button>
-            <button>{questions.filter((miss) => miss.answered === false).length}</button>
+            <footer style={{ display: show ? "flex" : "none" }}>
+                <button>{questions.filter((hit) => hit.answered !== undefined ).length}/{questions.length}</button>
+                <button>{questions.filter((hit) => hit.answered === true).length}</button>
+                <button>{questions.filter((miss) => miss.answered === false).length}</button>
+            </footer>
             {/* <fieldset>
                 {questions.map((element: Question) => {
                     return <>

@@ -1,14 +1,34 @@
 section {
-    /* width: 100%; */
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
+
 article {
-    width: 60rem;
+    height: 20rem;
+    width: 30rem;
 }
+
 li {
     list-style-type: none;
+}
+
+input:checked + label {
+    color: lightblue;
+}
+
+button {
+    margin: .25rem;
+}
+
+footer button:nth-child(2) {
+    background-color: red;
+}
+
+footer button:nth-child(3) {
+    background-color: green;
 }
