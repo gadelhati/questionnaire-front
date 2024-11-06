@@ -1,0 +1,277 @@
+[
+    {
+        "question": "Qual é o nome da protagonista da novela 'A Usurpadora'?",
+        "answers": [
+            "Maria do Bairro",
+            "Paola Bracho",
+            "Marimar",
+            "Teresa",
+            "Maria Mercedes"
+        ],
+        "answer": "Paola Bracho"
+    },
+    {
+        "question": "Qual atriz é famosa por interpretar personagens em três grandes novelas mexicanas: 'Maria do Bairro', 'Marimar' e 'Maria Mercedes'?",
+        "answers": [
+            "Lucero",
+            "Maite Perroni",
+            "Thalia",
+            "Gaby Spanic",
+            "Adela Noriega"
+        ],
+        "answer": "Thalia"
+    },
+    {
+        "question": "Em 'Maria do Bairro', quem é o grande amor da protagonista?",
+        "answers": [
+            "José Armando",
+            "Luis Fernando",
+            "Carlos Daniel",
+            "Diego",
+            "Alonso"
+        ],
+        "answer": "Luis Fernando"
+    },
+    {
+        "question": "Qual personagem é famosa pela frase 'Odeio os pobres!'?",
+        "answers": [
+            "Aline Montenegro",
+            "Soraya Montenegro",
+            "Helena",
+            "Paola Bracho",
+            "Teresa"
+        ],
+        "answer": "Soraya Montenegro"
+    },
+    {
+        "question": "Qual novela conta a história de duas irmãs gêmeas, uma boa e uma má?",
+        "answers": [
+            "Cúmplices de um Resgate",
+            "Amigas e Rivais",
+            "A Usurpadora",
+            "Maria do Bairro",
+            "O Privilégio de Amar"
+        ],
+        "answer": "A Usurpadora"
+    },
+    {
+        "question": "Quem interpretou a vilã Rubi na novela de mesmo nome?",
+        "answers": [
+            "Lucero",
+            "Bárbara Mori",
+            "Maite Perroni",
+            "Thalia",
+            "Anahí"
+        ],
+        "answer": "Bárbara Mori"
+    },
+    {
+        "question": "Qual novela tem uma personagem que sobe na vida através da beleza, mas a um alto custo?",
+        "answers": [
+            "Teresa",
+            "Rubi",
+            "A Feia Mais Bela",
+            "Maria do Bairro",
+            "Marimar"
+        ],
+        "answer": "Rubi"
+    },
+    {
+        "question": "Quem é a famosa vilã de 'Maria do Bairro' que cai em desgraça ao longo da história?",
+        "answers": [
+            "Aline Montenegro",
+            "Soraya Montenegro",
+            "Helena",
+            "Teresa",
+            "Paola Bracho"
+        ],
+        "answer": "Soraya Montenegro"
+    },
+    {
+        "question": "Qual dessas novelas foi baseada na história colombiana de 'Betty, a Feia'?",
+        "answers": [
+            "Coração Indomável",
+            "A Feia Mais Bela",
+            "Sortilégio",
+            "Maria do Bairro",
+            "Amigas e Rivais"
+        ],
+        "answer": "A Feia Mais Bela"
+    },
+    {
+        "question": "Em 'Marimar', qual é o animal de estimação da protagonista?",
+        "answers": [
+            "Um cachorro",
+            "Um peixe",
+            "Um papagaio",
+            "Um gato",
+            "Um cavalo"
+        ],
+        "answer": "Um cachorro"
+    },
+    {
+        "question": "Quem protagoniza a novela 'Teresa'?",
+        "answers": [
+            "Lucero",
+            "Angelique Boyer",
+            "Maite Perroni",
+            "Gaby Spanic",
+            "Bárbara Mori"
+        ],
+        "answer": "Angelique Boyer"
+    },
+    {
+        "question": "Qual novela conta a história de uma moça humilde que se apaixona por um milionário, enfrentando desafios na cidade?",
+        "answers": [
+            "Maria do Bairro",
+            "Rubi",
+            "Teresa",
+            "Sortilégio",
+            "Coração Indomável"
+        ],
+        "answer": "Maria do Bairro"
+    },
+    {
+        "question": "Qual dessas novelas é um remake de 'Marimar'?",
+        "answers": [
+            "Coração Indomável",
+            "Teresa",
+            "Amigas e Rivais",
+            "A Usurpadora",
+            "Sortilégio"
+        ],
+        "answer": "Coração Indomável"
+    },
+    {
+        "question": "Qual atriz interpretou Paola Bracho e Paulina em 'A Usurpadora'?",
+        "answers": [
+            "Bárbara Mori",
+            "Gabriela Spanic",
+            "Lucero",
+            "Angelique Boyer",
+            "Maite Perroni"
+        ],
+        "answer": "Gabriela Spanic"
+    },
+    {
+        "question": "Em 'Sortilégio', qual é o nome do protagonista interpretado por William Levy?",
+        "answers": [
+            "Luis Fernando",
+            "Carlos Daniel",
+            "José Armando",
+            "Santiago",
+            "Alessandro"
+        ],
+        "answer": "Alessandro"
+    },
+    {
+        "question": "Qual novela tem um triângulo amoroso entre uma mulher humilde, um médico e uma vilã rica?",
+        "answers": [
+            "Amigas e Rivais",
+            "Rubi",
+            "O Privilégio de Amar",
+            "Sortilégio",
+            "Maria Isabel"
+        ],
+        "answer": "O Privilégio de Amar"
+    },
+    {
+        "question": "Qual dessas novelas mexicanas tem uma versão brasileira chamada 'A Usurpadora'?",
+        "answers": [
+            "Cúmplices de um Resgate",
+            "Sortilégio",
+            "Carinha de Anjo",
+            "A Usurpadora",
+            "Rebelde"
+        ],
+        "answer": "A Usurpadora"
+    },
+    {
+        "question": "Qual novela conta a história de Lupita, Mia, Roberta e Miguel em uma escola de elite?",
+        "answers": [
+            "Coração Indomável",
+            "Maria do Bairro",
+            "Amigas e Rivais",
+            "O Diário de Daniela",
+            "Rebelde"
+        ],
+        "answer": "Rebelde"
+    },
+    {
+        "question": "Em 'Amigas e Rivais', qual tema central é abordado ao longo da história?",
+        "answers": [
+            "Superação pessoal",
+            "Vingança",
+            "Amizade e traição",
+            "Herança e poder",
+            "Amor proibido"
+        ],
+        "answer": "Amizade e traição"
+    },
+    {
+        "question": "Qual personagem famosa é conhecida por fingir uma deficiência em 'A Usurpadora'?",
+        "answers": [
+            "Paola Bracho",
+            "Soraya Montenegro",
+            "Teresa",
+            "Rubi",
+            "Aline Montenegro"
+        ],
+        "answer": "Paola Bracho"
+    },
+    {
+        "question": "Qual novela se passa em grande parte em uma fazenda e mostra o drama de Maricruz?",
+        "answers": [
+            "Marimar",
+            "Coração Indomável",
+            "A Usurpadora",
+            "O Privilégio de Amar",
+            "Rubi"
+        ],
+        "answer": "Coração Indomável"
+    },
+    {
+        "question": "Qual dessas novelas conta a história de uma empregada que se apaixona pelo patrão?",
+        "answers": [
+            "Maria do Bairro",
+            "Sortilégio",
+            "Rubi",
+            "A Feia Mais Bela",
+            "Teresa"
+        ],
+        "answer": "Maria do Bairro"
+    },
+    {
+        "question": "Qual novela mexicana é famosa pelo bordão: 'Você é um bárbaro!'?",
+        "answers": [
+            "Maria do Bairro",
+            "Rubi",
+            "Marimar",
+            "Teresa",
+            "Sortilégio"
+        ],
+        "answer": "Marimar"
+    },
+    {
+        "question": "Quem protagoniza a novela 'A Feia Mais Bela'?",
+        "answers": [
+            "Angélica Vale",
+            "Maite Perroni",
+            "Lucero",
+            "Gaby Spanic",
+            "Bárbara Mori"
+        ],
+        "answer": "Angélica Vale"
+    },
+    {
+        "question": "Qual novela tem como vilã uma jovem ambiciosa e manipuladora chamada Teresa?",
+        "answers": [
+            "Teresa",
+            "Rubi",
+            "Coração Indomável",
+            "Sortilégio",
+            "Maria do Bairro"
+        ],
+        "answer": "Teresa"
+    }
+]
