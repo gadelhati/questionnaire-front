@@ -17,12 +17,11 @@ export const Questionnaire = () => {
         setQuestion(data[Math.floor(Math.random() * data.length)])
     }
     const changeQuestion = () => {
-        // setShow(false)
         setQuestion(questions[Math.floor(Math.random() * questions.length)])
-        // const radios = document.getElementsByName(question.question)
-        // radios.forEach(radio => radio.checked = false)
+        clear()
     }
     const selectAnswer = async (event: ChangeEvent<HTMLInputElement>) => {
+        disable()
         if(event.target.value === question.answer) {
             setQuestions([...questions.filter((question) => question.question !== event.target.name),
                 {...question, answered: true }
@@ -32,6 +31,30 @@ export const Questionnaire = () => {
                 {...question, answered: false }
             ])
         }
+    }
+    // const selected = () => {
+    //     // const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s]/g, '-')}]"`)
+    //     // radios.forEach((radio)=>{
+    //     //     console.log((radio as HTMLInputElement).checked )
+    //     // })
+    //     const radioButtons = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s]/g, '-')}]"`)
+    //     console.log('2', radioButtons)
+    //     for (const radioButton of radioButtons) {
+    //         if ((radioButton as HTMLInputElement).checked) {
+    //             console.log(radioButton.value)
+    //             break
+    //         }
+    //     }
+    // }
+    const clear = () => {
+        const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s]/g, '-')}]"`)
+        console.log(radios)
+        radios.forEach(radio => (radio as HTMLInputElement).checked = false)
+    }
+    const disable = () => {
+        const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s]/g, '-')}]"`)
+        console.log(radios)
+        radios.forEach(radio => (radio as HTMLInputElement).disabled = true)
     }
     return (
         <section>
@@ -43,16 +66,17 @@ export const Questionnaire = () => {
                 <option aria-value={novela}>Novela</option>
             </select> */}
             <button onClick={changeQuestion}>skip</button>
-            <button onClick={() => setShow(!show)}>spoiler</button>
             <fieldset>
                 <legend>{question.question}</legend>
                 <>{question.answers.map((answer: string) => {
                     return <li>
-                        <input type="radio" id={answer} name={question.question} value={answer} onChange={selectAnswer} />
+                        <input type="radio" id={answer} name={question.question.replace(/[\?\s]/g, '-')} value={answer} onChange={selectAnswer} />
                         <label htmlFor={answer}>{answer}</label>
                     </li>
                 })}</>
             </fieldset>
+            <button onClick={() => setShow(!show)}>spoiler</button>
+            {/* <button onClick={selected}>selected</button> */}
             <footer style={{ display: show ? "flex" : "none" }}>
                 <button>{questions.filter((hit) => hit.answered !== undefined ).length}/{questions.length}</button>
                 <button>{questions.filter((hit) => hit.answered === true).length}</button>

@@ -11,6 +11,9 @@ section {
 article {
     height: 20rem;
     width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 li {
@@ -23,6 +26,11 @@ input:checked + label {
 
 button {
     margin: .25rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
 }
 
 footer button:nth-child(2) {
