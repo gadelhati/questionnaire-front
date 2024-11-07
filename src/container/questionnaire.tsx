@@ -11,7 +11,7 @@ export const Questionnaire = () => {
 
     useEffect(() => {
         changeQuestion()
-    }, [question])
+    }, [])
     const changeQuestions = (data: Question[]) => {
         setQuestions(data)
         setQuestion(data[Math.floor(Math.random() * data.length)])
