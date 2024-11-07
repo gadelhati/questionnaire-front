@@ -26,9 +26,9 @@ button {
 }
 
 footer button:nth-child(2) {
-    background-color: red;
+    background-color: green;
 }
 
 footer button:nth-child(3) {
-    background-color: green;
+    background-color: red;
 }
