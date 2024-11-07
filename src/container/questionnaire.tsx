@@ -17,7 +17,7 @@ export const Questionnaire = () => {
         setQuestion(data[Math.floor(Math.random() * data.length)])
     }
     const changeQuestion = () => {
-        setShow(false)
+        // setShow(false)
         setQuestion(questions[Math.floor(Math.random() * questions.length)])
         // const radios = document.getElementsByName(question.question)
         // radios.forEach(radio => radio.checked = false)
@@ -43,7 +43,7 @@ export const Questionnaire = () => {
                 <option aria-value={novela}>Novela</option>
             </select> */}
             <button onClick={changeQuestion}>skip</button>
-            <button onClick={() => setShow(true)}>check</button>
+            <button onClick={() => setShow(!show)}>spoiler</button>
             <fieldset>
                 <legend>{question.question}</legend>
                 <>{question.answers.map((answer: string) => {
@@ -52,8 +52,6 @@ export const Questionnaire = () => {
                         <label htmlFor={answer}>{answer}</label>
                     </li>
                 })}</>
-                <>{JSON.stringify(question.answered)}</>
-                <>{question.answer}</>
             </fieldset>
             <footer style={{ display: show ? "flex" : "none" }}>
                 <button>{questions.filter((hit) => hit.answered !== undefined ).length}/{questions.length}</button>
