@@ -21,14 +21,14 @@ export const Questionnaire = () => {
         clear()
     }
     const selectAnswer = async (event: ChangeEvent<HTMLInputElement>) => {
-        disable()
-        if(event.target.value === question.answer) {
-            setQuestions([...questions.filter((question) => question.question !== event.target.name),
-                {...question, answered: true }
+        // disable()
+        if (event.target.value === question.answer) {
+            setQuestions([...questions.filter((question) => question.question.replace(/[\?\s]/g, '-') !== event.target.name),
+            { ...question, answered: true }
             ])
         } else {
-            setQuestions([...questions.filter((question) => question.question !== event.target.name),
-                {...question, answered: false }
+            setQuestions([...questions.filter((question) => question.question.replace(/[\?\s]/g, '-') !== event.target.name),
+            { ...question, answered: false }
             ])
         }
     }
@@ -47,42 +47,41 @@ export const Questionnaire = () => {
     //     }
     // }
     const clear = () => {
-        const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s]/g, '-')}]"`)
-        console.log(radios)
+        const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s]/g, '-')}"]`)
         radios.forEach(radio => (radio as HTMLInputElement).checked = false)
     }
     const disable = () => {
-        const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s]/g, '-')}]"`)
+        const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s]/g, '-')}"]`)
         console.log(radios)
         radios.forEach(radio => (radio as HTMLInputElement).disabled = true)
     }
     return (
         <section>
             <article>
-            <button onClick={() => changeQuestions(naruto)}>naruto</button>
-            <button onClick={() => changeQuestions(novela)}>novela</button>
-            {/* <select name="data" onChange={(event)=>changeQuestions} id="data">
-                <option aria-value={naruto}>Naruto</option>
-                <option aria-value={novela}>Novela</option>
-            </select> */}
-            <button onClick={changeQuestion}>skip</button>
-            <fieldset>
-                <legend>{question.question}</legend>
-                <>{question.answers.map((answer: string) => {
-                    return <li>
-                        <input type="radio" id={answer} name={question.question.replace(/[\?\s]/g, '-')} value={answer} onChange={selectAnswer} />
-                        <label htmlFor={answer}>{answer}</label>
-                    </li>
-                })}</>
-            </fieldset>
-            <button onClick={() => setShow(!show)}>spoiler</button>
-            {/* <button onClick={selected}>selected</button> */}
-            <footer style={{ display: show ? "flex" : "none" }}>
-                <button>{questions.filter((hit) => hit.answered !== undefined ).length}/{questions.length}</button>
-                <button>{questions.filter((hit) => hit.answered === true).length}</button>
-                <button>{questions.filter((miss) => miss.answered === false).length}</button>
-            </footer>
-            {/* <fieldset>
+                <button onClick={() => changeQuestions(naruto)}>naruto</button>
+                <button onClick={() => changeQuestions(novela)}>novela</button>
+                {/* <select name="data" onChange={(event)=>changeQuestions} id="data">
+                    <option aria-value={naruto}>Naruto</option>
+                    <option aria-value={novela}>Novela</option>
+                </select> */}
+                <button onClick={changeQuestion}>skip</button>
+                <fieldset>
+                    <legend>{question.question}</legend>
+                    <>{question.answers.map((answer: string) => {
+                        return <li key={answer}>
+                            <input type="radio" id={answer} name={question.question.replace(/[\?\s]/g, '-')} value={answer} onClick={selectAnswer} />
+                            <label htmlFor={answer}>{answer}</label>
+                        </li>
+                    })}</>
+                </fieldset>
+                <button onClick={() => setShow(!show)}>spoiler</button>
+                {/* <button onClick={selected}>selected</button> */}
+                <footer style={{ display: show ? "flex" : "none" }}>
+                    <button>{questions.filter((hit) => hit.answered !== undefined).length}/{questions.length}</button>
+                    <button>{questions.filter((hit) => hit.answered === true).length}</button>
+                    <button>{questions.filter((miss) => miss.answered === false).length}</button>
+                </footer>
+                {/* <fieldset>
                 {questions.map((element: Question) => {
                     return <>
                         <legend>{element.question}</legend>
