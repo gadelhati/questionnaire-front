@@ -9,8 +9,7 @@ section {
 }
 
 article {
-    height: 20rem;
-    width: 30rem;
+    height: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
