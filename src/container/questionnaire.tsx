@@ -39,7 +39,9 @@ export const Questionnaire = () => {
     const correct = () => {
         const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s]/g, '-')}"]`)
         radios.forEach(radio => {
-            console.log(radio.classList)
+            if ((radio as HTMLInputElement).value === question.answer) {
+                radio.classList.add('sua-classe')
+            }
         })
     }
     const disable = () => {
@@ -66,7 +68,7 @@ export const Questionnaire = () => {
                     })}</>
                 </fieldset>
                 <button onClick={() => setShow(!show)}>spoiler</button>
-                {/* <button onClick={correct}>correct</button> */}
+                <button onClick={correct}>correct</button>
                 <footer style={{ display: show ? "flex" : "none" }}>
                     <button>{questions.filter((hit) => hit.answered !== undefined).length}/{questions.length}</button>
                     <button>{questions.filter((hit) => hit.answered === true).length}</button>
