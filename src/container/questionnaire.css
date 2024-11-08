@@ -16,8 +16,16 @@ article {
     justify-content: center;
 }
 
+ul {
+    padding-left: 1rem;
+}
+
 li {
-    list-style-type: none;
+    list-style-type: lower-alpha;
+}
+
+input:checked + label {
+    text-decoration: underline;
 }
 
 button {

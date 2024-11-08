@@ -65,12 +65,12 @@ export const Questionnaire = () => {
                 <button onClick={changeQuestion}>próxima</button>
                 <fieldset>
                     <legend>{question.question}</legend>
-                    <>{question.answers.map((answer: string) => {
+                    <ul>{question.answers.map((answer: string) => {
                         return <li key={answer}>
-                            <input type="radio" id={answer} name={question.question.replace(/[\?\s]/g, '-')} value={answer} onChange={selectAnswer} />
+                            <input hidden type="radio" id={answer} name={question.question.replace(/[\?\s]/g, '-')} value={answer} onChange={selectAnswer} />
                             <label htmlFor={answer}>{answer}</label>
                         </li>
-                    })}</>
+                    })}</ul>
                 </fieldset>
                 <button onClick={() => setShow(!show)}>detalhes</button>
                 <footer style={{ display: show ? "flex" : "none" }}>
