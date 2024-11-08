@@ -62,7 +62,7 @@ export const Questionnaire = () => {
                     <legend>{question.question}</legend>
                     <>{question.answers.map((answer: string) => {
                         return <li key={answer}>
-                            <input type="radio" id={answer} name={question.question.replace(/[\?\s]/g, '-')} value={answer} onClick={selectAnswer} />
+                            <input type="radio" id={answer} name={question.question.replace(/[\?\s]/g, '-')} value={answer} onChange={selectAnswer} />
                             <label htmlFor={answer}>{answer}</label>
                         </li>
                     })}</>
