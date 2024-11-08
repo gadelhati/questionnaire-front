@@ -33,9 +33,9 @@ export const Questionnaire = () => {
             ])
         }
     }
-    const clear = () => {
+    const disable = () => {
         const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s]/g, '-')}"]`)
-        radios.forEach(radio => (radio as HTMLInputElement).checked = false)
+        radios.forEach(radio => (radio as HTMLInputElement).disabled = true)
     }
     const correct = () => {
         const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s]/g, '-')}"]`)
@@ -45,9 +45,13 @@ export const Questionnaire = () => {
             }
         })
     }
-    const disable = () => {
+    const clear = () => {
         const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s]/g, '-')}"]`)
-        radios.forEach(radio => (radio as HTMLInputElement).disabled = true)
+        radios.forEach(radio => {
+            (radio as HTMLInputElement).checked = false;
+            (radio as HTMLInputElement).disabled = false;
+            (radio as HTMLInputElement).classList.remove('correct');
+        })
     }
     return (
         <section>
@@ -58,7 +62,7 @@ export const Questionnaire = () => {
                     <option aria-value={naruto}>Naruto</option>
                     <option aria-value={novela}>Novela</option>
                 </select> */}
-                <button onClick={changeQuestion}>skip</button>
+                <button onClick={changeQuestion}>próxima</button>
                 <fieldset>
                     <legend>{question.question}</legend>
                     <>{question.answers.map((answer: string) => {
@@ -68,7 +72,7 @@ export const Questionnaire = () => {
                         </li>
                     })}</>
                 </fieldset>
-                <button onClick={() => setShow(!show)}>spoiler</button>
+                <button onClick={() => setShow(!show)}>detalhes</button>
                 <footer style={{ display: show ? "flex" : "none" }}>
                     <button>respondidas {questions.filter((hit) => hit.answered !== undefined).length}/{questions.length}</button>
                     <button>acertos {questions.filter((hit) => hit.answered === true).length}</button>
