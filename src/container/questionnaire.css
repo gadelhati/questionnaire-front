@@ -20,10 +20,6 @@ li {
     list-style-type: none;
 }
 
-input:checked + label {
-    color: lightblue;
-}
-
 button {
     margin: .25rem;
 }
