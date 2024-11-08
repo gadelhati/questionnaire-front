@@ -22,6 +22,7 @@ export const Questionnaire = () => {
     }
     const selectAnswer = async (event: ChangeEvent<HTMLInputElement>) => {
         disable()
+        correct()
         if (event.target.value === question.answer) {
             setQuestions([...questions.filter((question) => question.question.replace(/[\?\s]/g, '-') !== event.target.name),
             { ...question, answered: true }
@@ -40,7 +41,7 @@ export const Questionnaire = () => {
         const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s]/g, '-')}"]`)
         radios.forEach(radio => {
             if ((radio as HTMLInputElement).value === question.answer) {
-                radio.classList.add('sua-classe')
+                radio.classList.add('correct')
             }
         })
     }
@@ -68,11 +69,10 @@ export const Questionnaire = () => {
                     })}</>
                 </fieldset>
                 <button onClick={() => setShow(!show)}>spoiler</button>
-                <button onClick={correct}>correct</button>
                 <footer style={{ display: show ? "flex" : "none" }}>
-                    <button>{questions.filter((hit) => hit.answered !== undefined).length}/{questions.length}</button>
-                    <button>{questions.filter((hit) => hit.answered === true).length}</button>
-                    <button>{questions.filter((miss) => miss.answered === false).length}</button>
+                    <button>respondidas {questions.filter((hit) => hit.answered !== undefined).length}/{questions.length}</button>
+                    <button>acertos {questions.filter((hit) => hit.answered === true).length}</button>
+                    <button>erros {questions.filter((miss) => miss.answered === false).length}</button>
                 </footer>
                 {/* <fieldset>
                     {questions.map((element: Question) => {
