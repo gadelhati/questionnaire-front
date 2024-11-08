@@ -2,87 +2,87 @@
     {
         "question": "Qual é o nome completo do protagonista da série?",
         "answers": [
-            "Naruto Uzumaki",
-            "Naruto Senju",
-            "Naruto Sarutobi",
+            "Naruto Hyuga",
             "Naruto Uchiha",
-            "Naruto Hyuga"
+            "Naruto Senju",
+            "Naruto Uzumaki",
+            "Naruto Sarutobi"
         ],
         "answer": "Naruto Uzumaki"
     },
     {
         "question": "Qual o nome da besta de nove caudas selada em Naruto?",
         "answers": [
-            "Kurama",
-            "Shukaku",
+            "Isobu",
             "Gyuki",
             "Matatabi",
-            "Isobu"
+            "Kurama",
+            "Shukaku"
         ],
         "answer": "Kurama"
     },
     {
         "question": "Quem é o melhor amigo de Naruto?",
         "answers": [
+            "Rock Lee",
+            "Shikamaru Nara",
             "Sasuke Uchiha",
             "Kiba Inuzuka",
-            "Shikamaru Nara",
-            "Neji Hyuga",
-            "Rock Lee"
+            "Neji Hyuga"
         ],
         "answer": "Sasuke Uchiha"
     },
     {
         "question": "Qual é a principal técnica do clã Uchiha?",
         "answers": [
-            "Sharingan",
-            "Rinnegan",
-            "Byakugan",
             "Ketsuryugan",
-            "Shikotsumyaku"
+            "Shikotsumyaku",
+            "Sharingan",
+            "Byakugan",
+            "Rinnegan"
         ],
         "answer": "Sharingan"
     },
     {
         "question": "Qual é o sonho de Naruto?",
         "answers": [
-            "Se tornar Hokage",
             "Ser o ninja mais forte",
-            "Ter uma família",
+            "Viajar pelo mundo",
             "Derrotar Sasuke",
-            "Viajar pelo mundo"
+            "Se tornar Hokage",
+            "Ter uma família"
         ],
         "answer": "Se tornar Hokage"
     },
     {
         "question": "Quem é a primeira pessoa a reconhecer Naruto como herói?",
         "answers": [
+            "Jiraiya",
             "Iruka",
-            "Kakashi",
             "Sakura",
-            "Hiruzen",
-            "Jiraiya"
+            "Kakashi",
+            "Hiruzen"
         ],
         "answer": "Iruka"
     },
     {
         "question": "Qual é o jutsu mais conhecido de Naruto?",
         "answers": [
-            "Rasengan",
             "Chidori",
+            "Rasengan",
             "Katon",
-            "Amaterasu",
-            "Susanoo"
+            "Susanoo",
+            "Amaterasu"
         ],
         "answer": "Rasengan"
     },
     {
         "question": "Quem foi o professor de Naruto durante seu treinamento no Monte Myoboku?",
         "answers": [
-            "Jiraiya",
-            "Kakashi",
             "Iruka",
+            "Kakashi",
             "Asuma",
+            "Jiraiya",
             "Yamato"
         ],
         "answer": "Jiraiya"
@@ -90,21 +90,21 @@
     {
         "question": "Quem era o melhor amigo de Hashirama Senju?",
         "answers": [
-            "Madara Uchiha",
             "Tobirama Senju",
-            "Sarutobi Hiruzen",
             "Minato Namikaze",
-            "Mito Uzumaki"
+            "Mito Uzumaki",
+            "Madara Uchiha",
+            "Sarutobi Hiruzen"
         ],
         "answer": "Madara Uchiha"
     },
     {
         "question": "Qual o nome do terceiro Hokage?",
         "answers": [
-            "Hiruzen Sarutobi",
-            "Hashirama Senju",
-            "Tobirama Senju",
             "Minato Namikaze",
+            "Hashirama Senju",
+            "Hiruzen Sarutobi",
+            "Tobirama Senju",
             "Kakashi Hatake"
         ],
         "answer": "Hiruzen Sarutobi"
@@ -112,11 +112,11 @@
     {
         "question": "Quem foi o primeiro sensei de Naruto?",
         "answers": [
-            "Iruka Umino",
             "Kakashi Hatake",
-            "Jiraiya",
             "Tsunade",
-            "Asuma Sarutobi"
+            "Asuma Sarutobi",
+            "Jiraiya",
+            "Iruka Umino"
         ],
         "answer": "Iruka Umino"
     },
@@ -125,51 +125,51 @@
         "answers": [
             "Minato Namikaze",
             "Naruto Uzumaki",
-            "Kakashi Hatake",
+            "Hashirama Senju",
             "Jiraiya",
-            "Hashirama Senju"
+            "Kakashi Hatake"
         ],
         "answer": "Minato Namikaze"
     },
     {
         "question": "Quem era o mentor de Kakashi na juventude?",
         "answers": [
-            "Minato Namikaze",
+            "Fugaku Uchiha",
             "Jiraiya",
-            "Tsunade",
+            "Minato Namikaze",
             "Hiruzen Sarutobi",
-            "Fugaku Uchiha"
+            "Tsunade"
         ],
         "answer": "Minato Namikaze"
     },
     {
         "question": "Qual era o objetivo de Orochimaru?",
         "answers": [
-            "Imortalidade",
-            "Conquistar a Vila da Folha",
             "Destruir Naruto",
+            "Ser Hokage",
             "Controlar as Bestas com Cauda",
-            "Ser Hokage"
+            "Conquistar a Vila da Folha",
+            "Imortalidade"
         ],
         "answer": "Imortalidade"
     },
     {
         "question": "Qual é a técnica mais poderosa de Rock Lee?",
         "answers": [
-            "Lótus Primária",
+            "Susanoo",
+            "Chakra Mode",
             "Chidori",
             "Rasengan",
-            "Chakra Mode",
-            "Susanoo"
+            "Lótus Primária"
         ],
         "answer": "Lótus Primária"
     },
     {
         "question": "Qual personagem criou o Chidori?",
         "answers": [
+            "Naruto Uzumaki",
             "Kakashi Hatake",
             "Sasuke Uchiha",
-            "Naruto Uzumaki",
             "Minato Namikaze",
             "Itachi Uchiha"
         ],
@@ -178,11 +178,11 @@
     {
         "question": "Quem era o líder da Akatsuki?",
         "answers": [
-            "Pain",
-            "Madara Uchiha",
             "Itachi Uchiha",
+            "Pain",
             "Zetsu",
-            "Kisame"
+            "Kisame",
+            "Madara Uchiha"
         ],
         "answer": "Pain"
     },
@@ -200,22 +200,22 @@
     {
         "question": "Quem matou Itachi Uchiha?",
         "answers": [
-            "Sasuke Uchiha",
             "Naruto Uzumaki",
-            "Kakashi Hatake",
+            "Pain",
             "Madara Uchiha",
-            "Pain"
+            "Sasuke Uchiha",
+            "Kakashi Hatake"
         ],
         "answer": "Sasuke Uchiha"
     },
     {
         "question": "Qual é o nome da organização liderada por Orochimaru?",
         "answers": [
-            "Som",
-            "Akatsuki",
             "Folha",
-            "Areia",
-            "Névoa"
+            "Akatsuki",
+            "Som",
+            "Névoa",
+            "Areia"
         ],
         "answer": "Som"
     },
@@ -224,8 +224,8 @@
         "answers": [
             "Tsunade",
             "Jiraiya",
-            "Kakashi",
             "Minato",
+            "Kakashi",
             "Hiruzen"
         ],
         "answer": "Tsunade"
@@ -233,20 +233,20 @@
     {
         "question": "Quem ensinou a Naruto o Rasengan?",
         "answers": [
-            "Jiraiya",
-            "Kakashi",
+            "Minato",
             "Iruka",
-            "Tsunade",
-            "Minato"
+            "Kakashi",
+            "Jiraiya",
+            "Tsunade"
         ],
         "answer": "Jiraiya"
     },
     {
         "question": "Qual é o clã da Hinata?",
         "answers": [
-            "Hyuga",
             "Uzumaki",
             "Senju",
+            "Hyuga",
             "Uchiha",
             "Nara"
         ],
@@ -255,10 +255,10 @@
     {
         "question": "Qual é a Kekkei Genkai do clã Uchiha?",
         "answers": [
-            "Sharingan",
+            "Mangekyou Sharingan",
             "Byakugan",
             "Rinnegan",
-            "Mangekyou Sharingan",
+            "Sharingan",
             "Jogan"
         ],
         "answer": "Sharingan"
@@ -266,11 +266,11 @@
     {
         "question": "Quem criou a organização Akatsuki?",
         "answers": [
+            "Itachi",
             "Yahiko",
             "Nagato",
-            "Obito",
-            "Itachi",
-            "Konan"
+            "Konan",
+            "Obito"
         ],
         "answer": "Yahiko"
     }
