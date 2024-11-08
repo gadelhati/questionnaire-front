@@ -53,16 +53,24 @@ export const Questionnaire = () => {
             (radio as HTMLInputElement).classList.remove('correct');
         })
     }
+    const reorder = (array: string[]) => {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array
+    }
     return (
         <section>
             <article>
-                <button onClick={() => changeQuestions(naruto)}>naruto</button>
-                <button onClick={() => changeQuestions(novela)}>novela</button>
-                {/* <select name="data" onChange={(event)=>changeQuestions} id="data">
-                    <option aria-value={naruto}>Naruto</option>
-                    <option aria-value={novela}>Novela</option>
-                </select> */}
-                <button onClick={changeQuestion}>próxima</button>
+                <header>
+                    <button onClick={() => changeQuestions(naruto)}>naruto</button>
+                    <button onClick={() => changeQuestions(novela)}>novela</button>
+                    {/* <select name="data" onChange={(event)=>changeQuestions} id="data">
+                        <option aria-value={naruto}>Naruto</option>
+                        <option aria-value={novela}>Novela</option>
+                    </select> */}
+                </header>
                 <fieldset>
                     <legend>{question.question}</legend>
                     <ul>{question.answers.map((answer: string) => {
@@ -72,7 +80,10 @@ export const Questionnaire = () => {
                         </li>
                     })}</ul>
                 </fieldset>
-                <button onClick={() => setShow(!show)}>detalhes</button>
+                <center>
+                    <button onClick={() => setShow(!show)} className="details">⚙</button>
+                    <button onClick={changeQuestion}>próxima</button>
+                </center>
                 <footer style={{ display: show ? "flex" : "none" }}>
                     <button>respondidas {questions.filter((hit) => hit.answered !== undefined).length}/{questions.length}</button>
                     <button>acertos {questions.filter((hit) => hit.answered === true).length}</button>

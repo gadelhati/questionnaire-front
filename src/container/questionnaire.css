@@ -48,3 +48,7 @@ footer button:nth-child(3) {
 .correct + label {
     color: green;
 }
+
+.details {
+    width: 3.3rem;
+}
