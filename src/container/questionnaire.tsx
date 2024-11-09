@@ -1,11 +1,12 @@
 import { ChangeEvent, useEffect, useState } from "react"
-import naruto from "../assets/naruto.json"
-import novela from "../assets/novela.json"
+// import naruto from "../assets/naruto.json"
+// import novela from "../assets/novela.json"
+import marinha from "../assets/marinha.json"
 import { initialQuestion, Question } from "../component/Question"
 import './questionnaire.css'
 
 export const Questionnaire = () => {
-    const [questions, setQuestions] = useState<Question[]>(naruto)
+    const [questions, setQuestions] = useState<Question[]>(marinha)
     const [question, setQuestion] = useState<Question>(initialQuestion)
     const [show, setShow] = useState<boolean>(false)
 
@@ -24,21 +25,21 @@ export const Questionnaire = () => {
         disable()
         correct()
         if (event.target.value === question.answer) {
-            setQuestions([...questions.filter((question) => question.question.replace(/[\?\s]/g, '-') !== event.target.name),
+            setQuestions([...questions.filter((question) => question.question.replace(/[\?\s\(\)\\n]/g, '-') !== event.target.name),
             { ...question, answered: true }
             ])
         } else {
-            setQuestions([...questions.filter((question) => question.question.replace(/[\?\s]/g, '-') !== event.target.name),
+            setQuestions([...questions.filter((question) => question.question.replace(/[\?\s\(\)\\n]/g, '-') !== event.target.name),
             { ...question, answered: false }
             ])
         }
     }
     const disable = () => {
-        const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s]/g, '-')}"]`)
+        const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s\(\)\\n]/g, '-')}"]`)
         radios.forEach(radio => (radio as HTMLInputElement).disabled = true)
     }
     const correct = () => {
-        const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s]/g, '-')}"]`)
+        const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s\(\)\\n]/g, '-')}"]`)
         radios.forEach(radio => {
             if ((radio as HTMLInputElement).value === question.answer) {
                 radio.classList.add('correct')
@@ -46,7 +47,7 @@ export const Questionnaire = () => {
         })
     }
     const clear = () => {
-        const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s]/g, '-')}"]`)
+        const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s\(\)\\n]/g, '-')}"]`)
         radios.forEach(radio => {
             (radio as HTMLInputElement).checked = false;
             (radio as HTMLInputElement).disabled = false;
@@ -65,8 +66,9 @@ export const Questionnaire = () => {
             <article>
                 <header>
                     <center>
-                        <button onClick={() => changeQuestions(naruto)}>naruto</button>
-                        <button onClick={() => changeQuestions(novela)}>novela</button>
+                        {/* <button onClick={() => changeQuestions(naruto)}>naruto</button>
+                        <button onClick={() => changeQuestions(novela)}>novela</button> */}
+                        <button onClick={() => changeQuestions(marinha)}>marinha</button>
                         {/* <select name="data" onChange={(event)=>changeQuestions} id="data">
                             <option aria-value={naruto}>Naruto</option>
                             <option aria-value={novela}>Novela</option>
@@ -77,7 +79,7 @@ export const Questionnaire = () => {
                     <legend>{question.question}</legend>
                     <ul>{question.answers.map((answer: string) => {
                         return <li key={answer}>
-                            <input hidden type="radio" id={answer} name={question.question.replace(/[\?\s]/g, '-')} value={answer} onChange={selectAnswer} />
+                            <input hidden type="radio" id={answer} name={question.question.replace(/[\?\s\(\)\\n]/g, '-')} value={answer} onChange={selectAnswer} />
                             <label htmlFor={answer}>{answer}</label>
                         </li>
                     })}</ul>
