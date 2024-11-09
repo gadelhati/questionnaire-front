@@ -64,12 +64,14 @@ export const Questionnaire = () => {
         <section>
             <article>
                 <header>
-                    <button onClick={() => changeQuestions(naruto)}>naruto</button>
-                    <button onClick={() => changeQuestions(novela)}>novela</button>
-                    {/* <select name="data" onChange={(event)=>changeQuestions} id="data">
-                        <option aria-value={naruto}>Naruto</option>
-                        <option aria-value={novela}>Novela</option>
-                    </select> */}
+                    <center>
+                        <button onClick={() => changeQuestions(naruto)}>naruto</button>
+                        <button onClick={() => changeQuestions(novela)}>novela</button>
+                        {/* <select name="data" onChange={(event)=>changeQuestions} id="data">
+                            <option aria-value={naruto}>Naruto</option>
+                            <option aria-value={novela}>Novela</option>
+                        </select> */}
+                    </center>
                 </header>
                 <fieldset>
                     <legend>{question.question}</legend>
