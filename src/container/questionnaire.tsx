@@ -85,8 +85,8 @@ export const Questionnaire = () => {
                     })}</ul>
                 </fieldset>
                 <center>
-                    <button onClick={() => setShow(!show)} className="details">⚙</button>
-                    <button onClick={changeQuestion}>próxima</button>
+                    <button onClick={() => setShow(!show)} className="details">!</button>
+                    <button onClick={changeQuestion}>Próxima</button>
                 </center>
                 <footer style={{ display: show ? "flex" : "none" }}>
                     <button>respondidas {questions.filter((hit) => hit.answered !== undefined).length}/{questions.length}</button>

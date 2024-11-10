@@ -6,7 +6,6 @@ body {
 }
 
 section {
-    height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -16,7 +15,7 @@ section {
 }
 
 article {
-    height: 50rem;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -25,14 +24,23 @@ article {
 }
 
 fieldset {
+    margin: .5rem;
     border-radius: .3rem;
     min-height: 10rem;
-    /* width: 20rem; */
     box-shadow: 0rem .5rem 13px 2px rgba(0,0,0,0.75);
 }
 
 li {
     list-style-type: lower-alpha;
+}
+
+legend, input + label {
+    text-align: justify;
+    display: block;
+}
+
+input + label {
+    width: 90%;
 }
 
 input:checked + label {
