@@ -1,33 +1,12 @@
-import { ChangeEvent, useEffect, useState } from "react"
+import { ChangeEvent, useState } from "react"
 import marinha from "../assets/marinha.json"
-import { initialQuestion, Question } from "../component/Question"
+import { Question } from "../component/Question"
 import './questionnaire.css'
 
 export const NewQuestionnaire = () => {
-    const [questions, setQuestions] = useState<Question[]>(marinha)
-    const [question, setQuestion] = useState<Question>(initialQuestion)
+    const [questions,] = useState<Question[]>(marinha)
     const [show, setShow] = useState<boolean>(false)
 
-    const disable = () => {
-        const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s\(\)\\n]/g, '-')}"]`)
-        radios.forEach(radio => (radio as HTMLInputElement).disabled = true)
-    }
-    const correct = () => {
-        const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s\(\)\\n]/g, '-')}"]`)
-        radios.forEach(radio => {
-            if ((radio as HTMLInputElement).value === question.answer) {
-                radio.classList.add('correct')
-            }
-        })
-    }
-    const clear = () => {
-        const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s\(\)\\n]/g, '-')}"]`)
-        radios.forEach(radio => {
-            (radio as HTMLInputElement).checked = false;
-            (radio as HTMLInputElement).disabled = false;
-            (radio as HTMLInputElement).classList.remove('correct');
-        })
-    }
     const createFile = () => {
         const blob = new Blob([JSON.stringify(questions)], {type: "application/json"});
         const url = URL.createObjectURL(blob)
