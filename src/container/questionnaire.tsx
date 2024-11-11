@@ -1,6 +1,4 @@
 import { ChangeEvent, useEffect, useState } from "react"
-// import naruto from "../assets/naruto.json"
-// import novela from "../assets/novela.json"
 import marinha from "../assets/marinha.json"
 import { initialQuestion, Question } from "../component/Question"
 import './questionnaire.css'
@@ -61,13 +59,21 @@ export const Questionnaire = () => {
     //     }
     //     return array
     // }
+    
+    // const createFile = () => {
+    //     const blob = new Blob([JSON.stringify(questions)], {type: "application/json"});
+    //     const url = URL.createObjectURL(blob)
+    //     const link = document.createElement('a')
+    //     link.download = 'questions.json'
+    //     link.href = url
+    //     link.click()
+    // }
     return (
         <section>
             <article>
                 <header>
                     <center>
-                        {/* <button onClick={() => changeQuestions(naruto)}>naruto</button>
-                        <button onClick={() => changeQuestions(novela)}>novela</button> */}
+                        {/* <button onClick={createFile}>download</button> */}
                         <button onClick={() => changeQuestions(marinha)}>marinha</button>
                         {/* <select name="data" onChange={(event)=>changeQuestions} id="data">
                             <option aria-value={naruto}>Naruto</option>
