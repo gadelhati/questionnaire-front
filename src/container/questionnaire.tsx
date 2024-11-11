@@ -59,21 +59,11 @@ export const Questionnaire = () => {
     //     }
     //     return array
     // }
-    
-    // const createFile = () => {
-    //     const blob = new Blob([JSON.stringify(questions)], {type: "application/json"});
-    //     const url = URL.createObjectURL(blob)
-    //     const link = document.createElement('a')
-    //     link.download = 'questions.json'
-    //     link.href = url
-    //     link.click()
-    // }
     return (
         <section>
             <article>
                 <header>
                     <center>
-                        {/* <button onClick={createFile}>download</button> */}
                         <button onClick={() => changeQuestions(marinha)}>marinha</button>
                         {/* <select name="data" onChange={(event)=>changeQuestions} id="data">
                             <option aria-value={naruto}>Naruto</option>
