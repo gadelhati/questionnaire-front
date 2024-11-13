@@ -1,14 +1,13 @@
 import { ChangeEvent, useState } from "react"
-import marinha from "../assets/marinha.json"
-import { Question } from "../component/Question"
+import { initialQuestion, Question } from "../component/Question"
 import './questionnaire.css'
 
 export const NewQuestionnaire = () => {
-    const [questions,] = useState<Question[]>(marinha)
-    const [show, setShow] = useState<boolean>(false)
+    const [questions, setQuestions] = useState<Question[]>([])
+    const [question, setQuestion] = useState<Question>({ ...initialQuestion, answers: Array(4).fill("") })
 
     const createFile = () => {
-        const blob = new Blob([JSON.stringify(questions)], {type: "application/json"});
+        const blob = new Blob([JSON.stringify(questions)], { type: "application/json" });
         const url = URL.createObjectURL(blob)
         const link = document.createElement('a')
         link.download = 'questions.json'
@@ -16,27 +15,26 @@ export const NewQuestionnaire = () => {
         link.click()
     }
     const handle = (event: ChangeEvent<HTMLInputElement>) => {
-        console.log("insert:", event)
+        setQuestion({ ...question, [event.target.name]: event.target.value })
+    }
+    const handleArray = (event: ChangeEvent<HTMLInputElement>, index: number) => {
+        const updatedAnswers = [...question.answers]
+        updatedAnswers[index] = event.target.value
+        setQuestion({ ...question, answers: updatedAnswers })
+    }
+    const addQuestion = () => {
+        setQuestions([...questions, question])
     }
     return (
         <section>
             <article>
-                <header>
+                <footer>
+                    <input type="text" name={"question"} value={question.question} onChange={handle} placeholder="question" />
+                    {question.answers.map((answer: string, index: number) => {
+                        return <input type="text" key={"answer"+index} name={"answers"} value={answer} onChange={(event) => handleArray(event, index)} placeholder={`answer ${index}`} />
+                    })}
+                    <button onClick={addQuestion}>add Question</button>
                     <button onClick={createFile}>download</button>
-                    <button onClick={() => setShow(!show)} className="details">show</button>
-                </header>
-                <footer style={{ display: show ? "flex" : "none" }}>
-                    <input type="text" name={""} value={""} onChange={handle} placeholder="question" />
-                    {/* <label> a </label> */}
-                    <input type="text" name={""} value={""} onChange={handle} placeholder="answer a" />
-                    {/* <label> b </label> */}
-                    <input type="text" name={""} value={""} onChange={handle} placeholder="answer b" />
-                    {/* <label> c </label> */}
-                    <input type="text" name={""} value={""} onChange={handle} placeholder="answer c" />
-                    {/* <label> d </label> */}
-                    <input type="text" name={""} value={""} onChange={handle} placeholder="answer d" />
-                    {/* <label> e </label> */}
-                    <input type="text" name={""} value={""} onChange={handle} placeholder="answer e" />
                 </footer>
             </article>
         </section>
