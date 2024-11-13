@@ -1,0 +1,90 @@
+[
+    {
+        "question": "DGPM-315 - Sobre o controle de militares submetidos a processos administrativos e criminais, conforme estabelece a DGPM-315",
+        "answers": [
+            "para efeito de punição disciplinar, a submissão do militar à ação da Justiça o isenta da aplicação das Normas e Regulamentos vigentes, inclusive",
+            "o Comandante da OM ou autoridade equivalente deverá fazer imediata comunicação, por meio de ofício, à DPMM ou ao CPesFN, quando militar do CFN;",
+            "as OM deverão buscar junto à autoridade judiciária ou policial competente, a situação atual do procedimento ou processo",
+            "até o dia 20 dos meses de fevereiro e agosto, as OM deverão encaminhar por ofício, preferencialmente por meio eletrônico, um resumo contendo todos os movimentos ocorridos",
+            "todo militar da MB deverá, imediatamente, comunicar por escrito ao seu Comandante/Diretor, via canal de comando, o fato de se encontrar na condição de envolvido, autor do fato, indiciado, investigado, denunciado ou querelado em procedimentos ou processos criminais e civis, em sede policial ou judicial"
+        ],
+        "answer": "o Comandante da OM ou autoridade equivalente deverá fazer imediata comunicação, por meio de ofício, à DPMM ou ao CPesFN, quando militar do CFN;"
+    },
+    {
+        "question": "DGPM-315 - De acordo com a DGPM-315 sobre os efeitos na carreira",
+        "answers": [
+            "não poderá constar de qualquer Quadro de Acesso ou Lista de Escolha e de qualquer relação para promoção, o oficial indiciado em processo criminal comum ou militar, enquanto não transitar em julgado a sentença;",
+            "não poderá constar de qualquer Quadro de Acesso, a praça quando estiver sub judice, por recebimento de denúncia, enquanto a sentença final não houver transitado em julgado;",
+            "O militar que estiver respondendo a processo na justiça criminal, comum ou militar, em liberdade, não poderá ser movimentado, exceto quando devidamente autorizado pelo Juízo competente, e pela DPMM ou CPesFN",
+            "poderá ser transferido para a Reserva Remunerada, a pedido, o militar que estiver indiciado, em qualquer jurisdição;",
+            "é vedado ao militar que estiver respondendo a processo na justiça criminal, comum ou militar, em liberdade, ser movimentado para OM localizada fora da sede do Foro correspondente"
+        ],
+        "answer": "O militar que estiver respondendo a processo na justiça criminal, comum ou militar, em liberdade, não poderá ser movimentado, exceto quando devidamente autorizado pelo Juízo competente, e pela DPMM ou CPesFN"
+    },
+    {
+        "question": "DGPM-315 - Assinale a opção correta, de acordo com a DGPM-315",
+        "answers": [
+            "sindicado é a pessoa maior de 18 anos, sobre a qual incide a investigação, em sede de Inquérito Policial (IP), para apurar materialidade de crime e indícios de autoria, a fim de subsidiar a propositura da Ação Penal",
+            "indiciado é o militar ou civil respondendo a processo criminal, na justiça comum ou militar",
+            "Procedimento de Diligência Investigatória Criminal (PDIC) é o procedimento conduzido pelo no âmbito do IPM, com a finalidade de colher elementos para a propositura de uma Ação Penal Pública",
+            "Contravenção Disciplinar é toda ação ou omissão contrária às obrigações ou aos deveres militares estatuídos nas leis, nos regulamentos e nas disposições em vigor que fundamentam a Organização Militar (OM), desde que não incidindo no que é capitulado no Código Penal Militar (CPM) como crime",
+            "requerimentos do Ministério Público são pedidos efetuados pelos órgãos do MP, cujo cumprimento é discricionário pela Administração Pública"
+        ],
+        "answer": "Contravenção Disciplinar é toda ação ou omissão contrária às obrigações ou aos deveres militares estatuídos nas leis, nos regulamentos e nas disposições em vigor que fundamentam a Organização Militar (OM), desde que não incidindo no que é capitulado no Código Penal Militar (CPM) como crime"
+    },
+    {
+        "question": "DGPM-315 - Sobre a Policia Judiciária Militar, conforme dispõe a DGPM-315, assinale a opção incorreta",
+        "answers": [
+            "possui competência para apurar os crimes militares, bem como os que, por lei especial, estão sujeitos à jurisdição militar, e sua autoria",
+            "possui competência para cumprir os mandados de prisão expedidos pela Justiça Militar",
+            "possui competência para solicitar das autoridades civis as informações e medidas que julgar úteis à elucidação das infrações penais, que estejam a seu cargo",
+            "possui competência para atender, com observância dos regulamentos militares, a pedido de apresentação de militar ou funcionário de repartição militar à autoridade civil competente, desde que legal e fundamentado o pedido",
+            "apurar a ocorrência de fatos anômalos ocorridos em locais sujeitos à jurisdição militar"
+        ],
+        "answer": "apurar a ocorrência de fatos anômalos ocorridos em locais sujeitos à jurisdição militar"
+    },
+    {
+        "question": "DGPM-315 - A respeito das denominações utilizadas na sindicância, é correto afirmar",
+        "answers": [
+            "Portaria de Instauração é o termo inicial da Sindicância",
+            "Juntada é a reunião de todas as peças da Sindicância, por ordem cronológica, formando os autos",
+            "reunião de peças é o termo que registra a anexação à Sindicância, mediante prévio despacho do encarregado, de qualquer documento ou papel que interesse à prova",
+            "na autuação serão relacionados todos os documentos iniciais que foram entregues ao escrivão pelo encarregado, excetuando-se a Portaria de Instauração",
+            "juntada é o termo que registra a anexação à Sindicância, mediante prévio despacho do encarregado, de qualquer documento ou papel que interesse à prova"
+        ],
+        "answer": "Juntada é a reunião de todas as peças da Sindicância, por ordem cronológica, formando os autos"
+    },
+    {
+        "question": "DGPM-315 Conforme previsto na DGPM-315, a sindicância",
+        "answers": [
+            "deverá ser instaurada pelo titular da OM em que ocorreu o fato a ser apurado ou por autoridade equivalente, ainda, nos casos de morte violenta de militar da ativa ocorrida em área sujeita à jurisdição militar, objetivando verificar se o falecimento se deu em situação de serviço ou em situação considerada como acidente em serviço, para o fim de promoção post-morlem.",
+            "não se confunde com o processo administrativo nem com o IPM, não admitindo, excepcionalmente, para a apuração dos fatos, que sejam adotadas medidas que impliquem em prisão ou detenção de elementos envolvidos",
+            "é possível ação de busca e apreensão em local sujeito à jurisdição militar da autoridade nomeante e, em nenhuma hipótese, no domicílio do sindicado, por ser asilo inviolável nos termos do art. 5°, XI, da Constituição Federal",
+            "Se resultarem indícios da ocorrência de ilícito penal, deverá prosseguir o procedimento investigatório para apontar os indícios de autoria",
+            "é obrigatório que os encarregados que utilizem, subsidiariamente, do Código de Processo Penal Militar (CPPM)"
+        ],
+        "answer": "não se confunde com o processo administrativo nem com o IPM, não admitindo, excepcionalmente, para a apuração dos fatos, que sejam adotadas medidas que impliquem em prisão ou detenção de elementos envolvidos"
+    },
+    {
+        "question": "DGPM-315 - No que diz respeito à nomeação do Encarregado e a designação do Escrivão da sindicância, é previsto na DGPM-315",
+        "answers": [
+            "Havendo necessidade de substituição do encarregado, no curso das investigações, esta será feita por meio de ordem de serviço específica da autoridade nomeante, a qual deverá conter a motivação do ato",
+            "o encarregado da Sindicância assume as atribuições que lhe foram delegadas pela autoridade nomeante por meio da respectiva \"Portaria de Autuação\"",
+            "A designação do escrivão é realizada pelo respectivo encarregado da Sindicância, por meio de portaria",
+            "se, durante as investigações, o encarregado verificar a existência de indícios de contravenção disciplinar ou crime contra militar mais antigo que o escrivão, providenciará a sua substituição.",
+            "se, durante as investigações, o encarregado verificar a existência de indícios de contravenção disciplinar ou crime contra oficial mais antigo, emitirá um relatório parcial, sem tecer comentários quanto à ação do oficial mais antigo e remeterá os autos à autoridade nomeante, que imediatamente promoverá a substituição do encarregado"
+        ],
+        "answer": "Havendo necessidade de substituição do encarregado, no curso das investigações, esta será feita por meio de ordem de serviço específica da autoridade nomeante, a qual deverá conter a motivação do ato"
+    },
+    {
+        "question": "DGPM-315 - No dia 28MAR, uma autoridade instaurou uma sindicância, nomeando o encarregado e designando o escrivão e este",
+        "answers": [
+            "deverá autuar a sindicância no dia de sua distribuição, lavrando o termo de autuação e atribuindo um número de ordem correspondente à sindicância instaurada",
+            "deverá autuar a sindicância na data de entrega do caderno de sindicância",
+            "deverá autuar a sindicância na data de sua conclusão",
+            "não deverá autuar a sindicância",
+            "deverá autuar a sindicância após o depoimento inicial"
+        ],
+        "answer": "deverá autuar a sindicância no dia de sua distribuição, lavrando o termo de autuação e atribuindo um número de ordem correspondente à sindicância instaurada"
+    }
+]

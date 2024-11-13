@@ -1,0 +1,112 @@
+[
+    {
+        "question": "CBINC CAAML 1202 - Em relação à Dinâmica do Incêndio, os incêndios podem ser separados em quatro diferentes estágios, quais são:",
+        "answers": [
+            "Fase inicial, desenvolvimento, Incêndio controlado e Fase de extinção.",
+            "Fase inicial, Fase de desenvolvimento, Incêndio desenvolvido e Fase de queda de intensidade e 'backdraft'",
+            "Fase inicial, Fase de desenvolvimento, Incêndio desenvolvido e Fase de queda de Incêndio.",
+            "Fase inicial, Fase de equilíbrio, Incêndio desenvolvido e Fase de intensidade.",
+            "Fase inicial, fase do meio, incêndio final e fase sem chamas."
+        ],
+        "answer": "Fase inicial, Fase de desenvolvimento, Incêndio desenvolvido e Fase de queda de intensidade e 'backdraft'"
+    },
+    {
+        "question": "CBINC CAAML 1202 - Desenvolvimento simultâneo de calor e luz, que é produto da combustão de matérias inflamáveis, como, por ex., a madeira, o carvão, o gás.",
+        "answers": [
+            "Fogo",
+            "Incêndio",
+            "Chamas",
+            "Calor",
+            "Combustão"
+        ],
+        "answer": "Fogo"
+    },
+    {
+        "question": "CBINC CAAML 1202 - Fogo que lavra com intensidade, destruindo e, às vezes, causando prejuízos:",
+        "answers": [
+            "Fogo",
+            "Incêndio",
+            "Chamas",
+            "Calor",
+            "Combustão"
+        ],
+        "answer": "Incêndio"
+    },
+    {
+        "question": "CBINC CAAML 1202 - A característica principal desta fase é o repentino espalhamento das chamas a todo o material combustível existente no compartimento. Essa fase e fenômeno são, respectivamente:",
+        "answers": [
+            "Desenvolvimento e 'flashover'",
+            "'flashover' e Desenvolvimento",
+            "'Iean flashover' e Inicial",
+            "Incêndio Desenvolvido e 'flashover'",
+            "'Desenvolvido e 'Iean flashover'"
+        ],
+        "answer": "Desenvolvimento e 'flashover'"
+    },
+    {
+        "question": "CBINC CAAML 1202 - É o método mais antigo de se apagar incêndios, sendo seu agente universal a água:",
+        "answers": [
+            "Resfriamento",
+            "Abafamento",
+            "Retirada do material",
+            "Quebra da reação em cadeia",
+            "Reação química"
+        ],
+        "answer": "Resfriamento"
+    },
+    {
+        "question": "CBINC CAAML 1202 - Em relação à Fase Inicial, assinale a alternativa incorreta:",
+        "answers": [
+            "A fumaça proveniente da combustão forma uma camada quente na parte superior do compartimento.",
+            "A temperatura do compartimento ainda não está muito elevada, e o fogo está localizado próximo ao foco do incêndio.",
+            "Caso não ocorra a extinção do incêndio, poderá ocorrer o 'rollover', também conhecido como lean flashover.",
+            "'Rollover' é o fenômeno no qual os gases da combustão não queimados no incêndio misturam-se ao ar e se inflamam na parte superior do compartimento, devido à alta temperatura naquela área (são bolas de fogo que se formam na parte superior do compartimento).",
+            "As altas temperaturas concentram-se próximas ao foco do incêndio."
+        ],
+        "answer": "As altas temperaturas concentram-se próximas ao foco do incêndio."
+    },
+    {
+        "question": "CBINC CAAML 1202 - É o fenômeno no qual os gases da combustão não queimados no incêndio misturam-se ao ar e se inflamam na parte superior do compartimento devido à alta temperatura naquela área. Este fenômeno é conhecido pelo nome de:",
+        "answers": [
+            "'flashover'",
+            "'flashmounder'",
+            "'Iean flashover'",
+            "'backdraught'",
+            "'backdralt'"
+        ],
+        "answer": "'flashover'"
+    },
+    {
+        "question": "CBINC CAAML 1202 - É o fenômeno no qual os gases da combustão não queimados no incêndio misturam-se ao ar e se inflamam na parte superior do compartimento devido à alta temperatura naquela área. De qual fase trata-se o texto:",
+        "answers": [
+            "Fase de desenvolvimento",
+            "Fase inicial",
+            "Incêndio desenvolvido",
+            "Fase de queda de intensidade",
+            "Fase de fogo extinto"
+        ],
+        "answer": "Fase de desenvolvimento"
+    },
+    {
+        "question": "CBINC CAAML 1202 - Quando ar fresco for admitido nessa atmosfera rica em vapores combustíveis e gases explosivos e com temperatura próxima à de ignição, os três elementos do triângulo do fogo estarão novamente presentes e poderá ocorrer uma ignição explosiva, fenômeno também conhecido por:",
+        "answers": [
+            "'backdrefly'",
+            "'flashover'",
+            "'Iean flashover'",
+            "'roolover'",
+            "'backdraught'"
+        ],
+        "answer": "'backdraught'"
+    },
+    {
+        "question": "CBINC CAAML 1202 - Com relação aos métodos de extinção de incêndio, marque a única alternativa correta:",
+        "answers": [
+            "O método mais antigo de extinção de incêndios é o abafamento, que consiste em reduzir a quantidade de oxigênio para abaixo do limite de 16%.",
+            "Um dos agentes extintores por quebra da reação em cadeia mais conhecido na Marinha do Brasil é o halon, que é um agente extintor de compostos químicos formados por elementos halogênios (flúor, cloro, bromo e iodo), porém, sua fabricação foi banida pelo Protocolo de Montreal, por ser nocivo à camada de ozônio.",
+            "Resfriamento é o primeiro método básico de se apagar incêndios, sendo seu agente universal a água.",
+            "O Isolamento é um método que consiste na retirada do combustível, o que geralmente é utilizado quando não dispomos de equipamentos adequados para combater o incêndio.",
+            "Quebra da reação em cadeia é um processo de extinção de incêndios em que determinadas substâncias são introduzidas na reação química da combustão, com o propósito de extingui-la."
+        ],
+        "answer": "Resfriamento é o primeiro método básico de se apagar incêndios, sendo seu agente universal a água."
+    }
+]

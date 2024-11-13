@@ -1,4 +1,8 @@
 import { ChangeEvent, useEffect, useState } from "react"
+// import rdm from "../assets/rdm.json"
+import pmn from "../assets/pmn.json"
+import cav from "../assets/cav.json"
+import justica from "../assets/justica.json"
 import marinha from "../assets/marinha.json"
 import { initialQuestion, Question } from "../component/Question"
 import './questionnaire.css'
@@ -64,6 +68,10 @@ export const Questionnaire = () => {
             <article>
                 <header>
                     <center>
+                        {/* <button onClick={() => changeQuestions(rdm)}>rdm</button> */}
+                        <button onClick={() => changeQuestions(pmn)}>pmn</button>
+                        <button onClick={() => changeQuestions(cav)}>cav</button>
+                        <button onClick={() => changeQuestions(justica)}>justica</button>
                         <button onClick={() => changeQuestions(marinha)}>marinha</button>
                         {/* <select name="data" onChange={(event)=>changeQuestions} id="data">
                             <option aria-value={naruto}>Naruto</option>

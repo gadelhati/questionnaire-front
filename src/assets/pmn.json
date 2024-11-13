@@ -1,0 +1,112 @@
+[
+    {
+        "question": "PROC MN CAAML 703 - (Curso ADSUMUS) Nos navios, encontraremos diversos tipos de embarcações miúdas que, de acordo com o tipo de construção, possuem cada uma delas características próprias e emprego específico. Assinale entre as embarcações abaixo a que não pertence a este grupo:",
+        "answers": [
+            "Lanchas",
+            "Baleeiras",
+            "Botes infláveis",
+            "Embarcações de casco rígido",
+            "Balsas salva-vidas"
+        ],
+        "answer": "Balsas salva-vidas"
+    },
+    {
+        "question": "PROC MN CAAML 703 - (Curso ADSUMUS) Conforme a faina empregada, as embarcações miúdas utilizadas na MB podem ter como propulsão, EXCETO:",
+        "answers": [
+            "Motor de popa dos botes",
+            "Vela dos escales",
+            "Remos nas chalanas",
+            "Motor fixo de lancha",
+            "Motor na popa dos Hovercraft"
+        ],
+        "answer": "Motor na popa dos Hovercraft"
+    },
+    {
+        "question": "PROC MN CAAML 703 - (Curso ADSUMUS) Apresentam vantagens significativas em relação às embarcações tradicionais e são de introdução mais recente em nossa Marinha. Trata-se da(o):",
+        "answers": [
+            "Chalana",
+            "Embarcação de casco semi-rígido",
+            "Baleeira",
+            "Bote inflável",
+            "Hovercraft"
+        ],
+        "answer": "Hovercraft"
+    },
+    {
+        "question": "PROC MN CAAML 703 - (Curso ADSUMUS) Constitui dos por ferro redondo (maciço ou oco) ou por perfis retangulares, podendo ser recurvado na parte superior ou possuir ângulo de 90° graus (no caso de perfis). Gira em torno de seu eixo vertical ou pode ser fixo, dependendo de sua base. Trata-se de que tipo de Turco:",
+        "answers": [
+            "comum",
+            "de rebater",
+            "quadrantal",
+            "rolante ou deslizante",
+            "rebatido"
+        ],
+        "answer": "quadrantal"
+    },
+    {
+        "question": "PROC MN CAAML 703 (Curso ADSUMUS) As embarcações conduzidas nos picadeiros ou nos turcos, de modo a serem arriadas rapidamente. Elas são içadas e arriadas por meio de turcos, lanças ou guindastes. Os turcos são aparelhados montados aos pares, servindo apenas às embarcações por eles sustentadas. As alternativas abaixo mencionadas expressam os diversos tipos de turcos existentes em navios da MB, EXCETO:",
+        "answers": [
+            "Turco comum",
+            "Turco reforçado",
+            "Turco de rebater",
+            "Turco quadrantal",
+            "Turco rolante ou deslizante"
+        ],
+        "answer": "Turco reforçado"
+    },
+    {
+        "question": "PROC MN CAAML 703 - (Curso ADSUMUS) Durante a faina de arriar e içar a embarcação, todo o pessoal embarcado na mesma guarnece:",
+        "answers": [
+            "estrepo de mau tempo",
+            "cabo de contrabalanço",
+            "cabo guia",
+            "baça de viagem",
+            "os andorinhos"
+        ],
+        "answer": "baça de viagem"
+    },
+    {
+        "question": "PROC MN CAAML 703 - (Curso ADSUMUS) Complete as lacunas abaixo: 1 - contramestre 2 - patrão 3 - proeiro e popeiro 4 -motorista (MO) ( ) verifica o cumprimento das precauções de segurança por parte da guarnição (utilização de coletes de flutuabilidade permanente, capacetes e luvas); ( ) verifica as comunicações (transceptor portátil); ( ) exige correção de atitudes e apresentação pessoal da guarnição (a apresentação da guarnição da lancha deve ser impecável, qualquer que seja o uniforme; chama-se a atenção para a limpeza dos coletes salva-vidas, dos tênis brancos e dos caxangás). ( ) larga a boça de viagem (após ser largada, a boça fica pendurada por um cabo, em uma altura safa para ser recolhida, quando a lancha aproximar-se para atracar). ( ) verifica a boça de viagem; ( ) parte o motor da lancha; ( ) verifica se os equipamentos a serem utilizados na manobra tais como, motores, guinchos etc., foram alimentados; Marque a opção correta",
+        "answers": [
+            "3, 2, 3, 1,3,2 e 3",
+            "2, 1,3, 1,4, 1 e 4",
+            "3, 2, 4, 1, 1,2 e 2",
+            "2, 3, 1,2, 4, 2 e 2",
+            "2, 2, 2, 3, 1, 4 e 1"
+        ],
+        "answer": "2, 1,3, 1,4, 1 e 4"
+    },
+    {
+        "question": "PROC MN CAAML 703 - (Curso ADSUMUS) Esses recursos têm o propósito de aumentar a distância do aparelho de força que sustenta a embarcação (catarina) da área de trabalho do pessoal da lancha (proeiro, popeiro) e assim, reduzir o risco de acidentes de pessoal nas condições adversas mencionadas. Ao içar ou arriar uma embarcação em condições adversas de mar é recomendável a utilização de e de mau tempo.",
+        "answers": [
+            "estropos de segurança",
+            "estropo de mau tempo",
+            "cabo de contrabalanço",
+            "cabo guia",
+            "boça de viajem"
+        ],
+        "answer": "cabo de contrabalanço"
+    },
+    {
+        "question": "PROC MN CAAML 703 - (Curso ADSUMUS) Turco semelhante em construção ao tipo comum, mas em vez de girar em torno de seu eixo vertical, é rebatido para dentro, movendose em torno de um eixo horizontal no pé dele, paralelo ao costado. Trata-se de que tipo de Turco:",
+        "answers": [
+            "comum",
+            "de rebater",
+            "quadrantal",
+            "rolante ou deslizante",
+            "cremalheiro"
+        ],
+        "answer": "de rebater"
+    },
+    {
+        "question": "PROC MN CAAML 703 - (Curso ADSUMUS) É constituído por dois braços montados com rodetes sobre duas calhas (trilhos). Estas são paralelas e dispostas num plano perpendicular ao costado do navio. O turco é disparado por gravidade, sob ação do peso da embarcação. Trata-se de que tipo de Turco:",
+        "answers": [
+            "comum",
+            "de rebater",
+            "quadrantal",
+            "rolante ou deslizante",
+            "dentado"
+        ],
+        "answer": "rolante ou deslizante"
+    }
+]
