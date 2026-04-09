@@ -7,10 +7,10 @@ export const App = () => {
 
     return (
         <>
-            <nav className="tab">
+            {/* <nav className="tab">
                 <button className="tablinks" onClick={() => setTabulation(!tabulation)} id="answerQuestion">Questões</button>
                 <button className="tablinks" onClick={() => setTabulation(!tabulation)} id="addQuestionnaire">Arquivo</button>
-            </nav>
+            </nav> */}
             <div id="answerQuestion" hidden={tabulation} className="tabcontent">
                 <Questionnaire/>
             </div>

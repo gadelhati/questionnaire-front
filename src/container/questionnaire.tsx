@@ -9,7 +9,7 @@ import { initialQuestion, Question } from "../component/Question"
 import './questionnaire.css'
 
 export const Questionnaire = () => {
-    const [questions, setQuestions] = useState<Question[]>(marinha)
+    const [questions, setQuestions] = useState<Question[]>(direito)
     const [question, setQuestion] = useState<Question>(initialQuestion)
     const [show, setShow] = useState<boolean>(false)
 
@@ -70,11 +70,11 @@ export const Questionnaire = () => {
                 <header>
                     <center>
                         {/* <button onClick={() => changeQuestions(rdm)}>rdm</button> */}
-                        <button onClick={() => changeQuestions(pmn)}>pmn</button>
+                        {/* <button onClick={() => changeQuestions(pmn)}>pmn</button> */}
                         <button onClick={() => changeQuestions(direito)}>direito</button>
-                        <button onClick={() => changeQuestions(cav)}>cav</button>
+                        {/* <button onClick={() => changeQuestions(cav)}>cav</button>
                         <button onClick={() => changeQuestions(justica)}>justica</button>
-                        <button onClick={() => changeQuestions(marinha)}>marinha</button>
+                        <button onClick={() => changeQuestions(marinha)}>marinha</button> */}
                         {/* <select name="data" onChange={(event)=>changeQuestions} id="data">
                             <option aria-value={naruto}>Naruto</option>
                             <option aria-value={novela}>Novela</option>
