@@ -3,7 +3,7 @@ import { Questionnaire } from "./questionnaire";
 import { NewQuestionnaire } from "./NewQuestionnaire";
 
 export const App = () => {
-    const [tabulation, setTabulation] = useState<boolean>(false);
+    const [tabulation, ] = useState<boolean>(false);
 
     return (
         <>

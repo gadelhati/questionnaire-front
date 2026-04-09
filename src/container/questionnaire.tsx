@@ -1,10 +1,10 @@
 import { ChangeEvent, useEffect, useState } from "react"
 // import rdm from "../assets/rdm.json"
-import pmn from "../assets/pmn.json"
+// import pmn from "../assets/pmn.json"
 import direito from "../assets/direito.json"
-import cav from "../assets/cav.json"
-import justica from "../assets/justica.json"
-import marinha from "../assets/marinha.json"
+// import cav from "../assets/cav.json"
+// import justica from "../assets/justica.json"
+// import marinha from "../assets/marinha.json"
 import { initialQuestion, Question } from "../component/Question"
 import './questionnaire.css'
 
