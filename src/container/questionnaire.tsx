@@ -18,24 +18,44 @@ export const Questionnaire = () => {
     }, [])
     const changeQuestions = (data: Question[]) => {
         setQuestions(data)
-        setQuestion(data[Math.floor(Math.random() * data.length)])
+        // Seleciona uma questão não respondida quando muda o conjunto de dados
+        const unansweredQuestions = data.filter(q => q.answered === undefined);
+        if (unansweredQuestions.length > 0) {
+            setQuestion(unansweredQuestions[Math.floor(Math.random() * unansweredQuestions.length)]);
+        } else {
+            setQuestion(data[Math.floor(Math.random() * data.length)]);
+        }
     }
     const changeQuestion = () => {
-        setQuestion(questions[Math.floor(Math.random() * questions.length)])
+        // Tenta primeiro pegar questões não respondidas
+        const unansweredQuestions = questions.filter(q => q.answered === undefined);
+        
+        if (unansweredQuestions.length > 0) {
+            const randomIndex = Math.floor(Math.random() * unansweredQuestions.length);
+            setQuestion(unansweredQuestions[randomIndex]);
+        } else {
+            // Se todas foram respondidas, pega qualquer uma
+            setQuestion(questions[Math.floor(Math.random() * questions.length)]);
+        }
         clear()
     }
     const selectAnswer = async (event: ChangeEvent<HTMLInputElement>) => {
         disable()
         correct()
-        if (event.target.value === question.answer) {
-            setQuestions([...questions.filter((question) => question.question.replace(/[\?\s\(\)\\n]/g, '-') !== event.target.name),
-            { ...question, answered: true }
-            ])
-        } else {
-            setQuestions([...questions.filter((question) => question.question.replace(/[\?\s\(\)\\n]/g, '-') !== event.target.name),
-            { ...question, answered: false }
-            ])
-        }
+        const questionName = event.target.name;
+        
+        setQuestions(prevQuestions => 
+            prevQuestions.map(q => {
+                // Encontra a questão correspondente pelo name transformado
+                if (q.question.replace(/[\?\s\(\)\\n]/g, '-') === questionName) {
+                    return {
+                        ...q,
+                        answered: event.target.value === q.answer
+                    }
+                }
+                return q;
+            })
+        )
     }
     const disable = () => {
         const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s\(\)\\n]/g, '-')}"]`)
