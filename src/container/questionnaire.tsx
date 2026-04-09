@@ -17,13 +17,19 @@ export const Questionnaire = () => {
         changeQuestion()
     }, [])
     const changeQuestions = (data: Question[]) => {
-        setQuestions(data)
+        // Preserva o estado de 'answered' se já existir para questões com o mesmo texto
+        const updatedData = data.map(newQuestion => {
+            const existingQuestion = questions.find(q => q.question === newQuestion.question);
+            return existingQuestion ? existingQuestion : newQuestion;
+        });
+        
+        setQuestions(updatedData)
         // Seleciona uma questão não respondida quando muda o conjunto de dados
-        const unansweredQuestions = data.filter(q => q.answered === undefined);
+        const unansweredQuestions = updatedData.filter(q => q.answered === undefined);
         if (unansweredQuestions.length > 0) {
             setQuestion(unansweredQuestions[Math.floor(Math.random() * unansweredQuestions.length)]);
         } else {
-            setQuestion(data[Math.floor(Math.random() * data.length)]);
+            setQuestion(updatedData[Math.floor(Math.random() * updatedData.length)]);
         }
     }
     const changeQuestion = () => {
@@ -57,6 +63,21 @@ export const Questionnaire = () => {
             })
         )
     }
+    
+    const resetProgress = () => {
+        const resetQuestions = questions.map(q => ({
+            question: q.question,
+            answers: q.answers,
+            answer: q.answer
+            // Remove a propriedade 'answered'
+        }));
+        setQuestions(resetQuestions);
+        // Seleciona uma questão aleatória das questões resetadas
+        const randomIndex = Math.floor(Math.random() * resetQuestions.length);
+        setQuestion(resetQuestions[randomIndex]);
+        clear();
+    }
+    
     const disable = () => {
         const radios = document.querySelectorAll(`input[name="${question.question.replace(/[\?\s\(\)\\n]/g, '-')}"]`)
         radios.forEach(radio => (radio as HTMLInputElement).disabled = true)
@@ -118,6 +139,7 @@ export const Questionnaire = () => {
                     <button>respondidas {questions.filter((hit) => hit.answered !== undefined).length}/{questions.length}</button>
                     <button>acertos {questions.filter((hit) => hit.answered === true).length}</button>
                     <button>erros {questions.filter((miss) => miss.answered === false).length}</button>
+                    <button onClick={resetProgress}>Reset</button>
                 </footer>
                 {/* <fieldset>
                     {questions.map((element: Question) => {
