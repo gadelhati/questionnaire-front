@@ -133,7 +133,13 @@ export const Questionnaire = () => {
                 </fieldset>
                 <center>
                     <button onClick={() => setShow(!show)} className="details">!</button>
-                    <button onClick={changeQuestion}>Próxima</button>
+                    {questions.filter(q => q.answered === undefined).length > 0 ? (
+                        <button onClick={changeQuestion}>Próxima</button>
+                    ) : (
+                        <div>
+                            Concluído: {Math.round((questions.filter(q => q.answered === true).length / questions.length) * 100)}% de acertos
+                        </div>
+                    )}
                 </center>
                 <footer style={{ display: show ? "flex" : "none" }}>
                     <button>respondidas {questions.filter((hit) => hit.answered !== undefined).length}/{questions.length}</button>
